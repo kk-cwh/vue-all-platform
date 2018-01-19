@@ -30,7 +30,7 @@ npm run mac
 # 打包成windows桌面应用 注意：npm run build 之后才能运行
 npm run windows
 # 打包成linux应用 注意：npm run build 之后才能运行
-npm run inux
+npm run linux
 
 ```
 
