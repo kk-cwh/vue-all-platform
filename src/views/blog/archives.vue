@@ -40,8 +40,9 @@ export default {
     }
   },
   mounted () {
+    let id = this.$route.params.tag_id ? this.$route.params.tag_id : 0
     let page = this.page
-    this.$store.dispatch('AchivesList', {page}).then((response) => {
+    this.$store.dispatch('AchivesList', {page, tag_id: id}).then((response) => {
       // console.log(response)
       let list = response.data.articles.list
       if (list) {
